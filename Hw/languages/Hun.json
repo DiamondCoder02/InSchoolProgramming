@@ -1,3 +1,14 @@
 {
-    "test": "LOL"
+    "YN": "\n1.Igen \n2.Nem \n",
+    "wanna_play": "Szeretnél játszani?",
+    "choose_gamemode": "Válasz játékmódot:",
+    "menu": "1. Én gondoltam egy számra \n2. Te gondoltál egy számra \n3. Kilép \n",
+    "1_big_num": "Mi leggyen a legnagyobb gondolt szám? \n",
+    "1_guess": "Tippelj a kettő között, 1 és ",
+    "low": "Alacsony szám",
+    "high": "Magas szám",
+    "won": "Kitaláltad! Gratulálok!",
+    "enter_valid": "Kérlek adj egy helyes számot.",
+    "want_again": "Szeretnél megint játszani?",
+    "thanks_playing": "\n ***Köszönöm hogy játszottál!*** \n"
 }

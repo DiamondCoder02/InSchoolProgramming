@@ -10,8 +10,9 @@ json_config.close
 print(lang)
 print(language)
 
-again=input('Wanna play a game? (y/n): ')
-while again == "y":
+again=input('Wanna play a game?' + '\n1.Yes \n2.No \n')
+again=int(again)
+while again == 1:
     print('Choose a gamemode:')
     gamemode=input('1. I think of a number \n2. You think of a number \n3. Exit \n')
     game = int(gamemode)
@@ -23,23 +24,25 @@ while again == "y":
             num = random.randint(1, maxnumber)
             guess = None
             while guess != num:
-                guess = input('guess a number between 1 and ' + mn + ":")
+                guess = input('Guess a number between 1 and ' + mn + ":")
                 guess = int(guess)
                 if guess < num:
-                    print("guess is low")
+                    print('Low guess')
                 elif guess > num:
-                    print("guess is high")
+                    print('Guess is high')
                 else:
-                    print("you guessed it!")
+                    print('You guessed it! Congratulations!')
                     break
         if game == 2:
             print("Whut:")
         if game == 3:
             break
         if game > 4:
-            print("Please enter a valid number.")
-        again=input('Want to play? (y/n): ')
+            print('Please enter a valid number.')
+        again=input('Want to play again?' + '\n1.Yes \n2.No \n')
+        again=int(again)
     else:
         print("\033c")
-        print("Give me a valid option:")
+        print('Please enter a valid number.')
+
 print('\n ***Thank you for playing***')
