@@ -18,11 +18,12 @@ while again == "y":
     if game > 0:
         if game == 1:
             import random
-            maxnumber=input('What is the biggest number you want to guess? \n')
-            num = random.randint(1, 10)
+            mn=input('What is the biggest number you want to guess? \n')
+            maxnumber= int(mn)
+            num = random.randint(1, maxnumber)
             guess = None
             while guess != num:
-                guess = input('guess a number between 1 and ' + maxnumber + ":")
+                guess = input('guess a number between 1 and ' + mn + ":")
                 guess = int(guess)
                 if guess < num:
                     print("guess is low")
