@@ -1,4 +1,15 @@
+import json
 print("\033c")
+
+language=input("Language / Nyelv: Eng/Hun: \n")
+#json config load
+langfile = '.\\languages\\'+ language + '.json'
+with open(langfile, 'r') as json_config:
+    lang = json.load(json_config)
+json_config.close
+print(lang)
+print(language)
+
 again=input('Wanna play a game? (y/n): ')
 while again == "y":
     print('Choose a gamemode:')
@@ -7,17 +18,19 @@ while again == "y":
     if game > 0:
         if game == 1:
             import random
+            maxnumber=input('What is the biggest number you want to guess? \n')
             num = random.randint(1, 10)
             guess = None
             while guess != num:
-                guess = input("guess a number between 1 and 10: ")
+                guess = input('guess a number between 1 and ' + maxnumber + ":")
                 guess = int(guess)
-
-                if guess == num:
-                    print("You won!")
-                    break
+                if guess < num:
+                    print("guess is low")
+                elif guess > num:
+                    print("guess is high")
                 else:
-                    print("Nope, sorry. Try again!")
+                    print("you guessed it!")
+                    break
         if game == 2:
             print("Whut:")
         if game == 3:
