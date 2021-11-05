@@ -1,10 +1,10 @@
 print("\033c")
-again = "y"
+again=input('Wanna play a game? (y/n): ')
 while again == "y":
     print('Choose a gamemode:')
     gamemode=input('1. I think of a number \n2. You think of a number \n3. Exit \n')
     game = int(gamemode)
-    if game < 4:
+    if game > 0:
         if game == 1:
             import random
             num = random.randint(1, 10)
@@ -22,8 +22,10 @@ while again == "y":
             print("Whut:")
         if game == 3:
             break
-        again=input('Want to play again? (y/n): ')
+        if game > 4:
+            print("Please enter a valid number.")
+        again=input('Want to play? (y/n): ')
     else:
         print("\033c")
         print("Give me a valid option:")
-print('Thank you for playing')
+print('\n ***Thank you for playing***')
