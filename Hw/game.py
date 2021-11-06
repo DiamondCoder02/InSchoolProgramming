@@ -10,6 +10,7 @@ with open(langfile, 'r') as json_config:
     lang = json.load(json_config)
 json_config.close
 print(lang)
+print(langfile)
 print(language)
 
 again=input('Wanna play a game?' + '\n1.Yes \n2.No \n')
@@ -29,7 +30,8 @@ while again == 1:
                 trynum=input('_______________________\nHow many tries you need to quess? \n')
                 trynum1 = int(trynum)
                 for x in range(trynum1):
-                    guess = input('Guess a number between 1 and ' + mn + ":" + '  ('+x+')')
+                    x1=str(x)
+                    guess = input('____________(Guesses:'+x1+')'+ 'Guess a number between 1 and ' + mn + ": ")
                     guess = int(guess)
                     if guess < num:
                         print('Low guess')
