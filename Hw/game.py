@@ -13,6 +13,15 @@ print(lang)
 print(langfile)
 print(language)
 
+# some JSON:
+z =  '{ "name":"John", "age":30, "city":"New York"}'
+# parse x:
+y = json.loads(z)
+# the result is a Python dictionary:
+print(y["age"])
+
+wins1=0
+wins2=0
 again=input('Wanna play a game?' + '\n1.Yes \n2.No \n')
 again=int(again)
 while again == 1:
@@ -31,7 +40,7 @@ while again == 1:
                 trynum1 = int(trynum)
                 for x in range(trynum1):
                     x1=str(x)
-                    guess = input('____________(Guesses:'+x1+')'+ 'Guess a number between 1 and ' + mn + ": ")
+                    guess = input('____________(Guesses:'+x1+') '+ 'Guess a number between 1 and ' + mn + ": ")
                     guess = int(guess)
                     if guess < num:
                         print('Low guess')
@@ -40,6 +49,7 @@ while again == 1:
                     else:
                         print("\033c")
                         print('You guessed it! Congratulations!')
+                        wins1 += 1
                         break
                 else:
                     num1 = str(num)
@@ -47,6 +57,7 @@ while again == 1:
                     break
         if game == 2:
             print("Whut:")
+            wins2 += 1
         if game == 3:
             break
         if game > 4:
@@ -60,3 +71,6 @@ while again == 1:
  #   print('_____________________\nSomething went wrong. Restart the game and give correct numbers!')
 
 print('\n___***Thank you for playing***___')
+win1 = str(wins1)
+win2 = str(wins2)
+print('________________You won: ' + win1 + '\n________________I, the computer won: ' + win2)
