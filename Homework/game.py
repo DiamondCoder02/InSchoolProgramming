@@ -19,7 +19,12 @@ while to_play == 1:
     wins2=0
     lose1=0
     lose2=0
-    again=input(lang["wanna_play"] + lang["YN"])
+    while True:
+        try:
+            again = int(input(lang["wanna_play"] + lang["YN"]))
+            break
+        except:
+            print(lang["enter_valid"])
     again=int(again)
     if again == 1:
         print("\033c")
