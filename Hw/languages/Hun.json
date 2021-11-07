@@ -4,11 +4,17 @@
     "choose_gamemode": "Válasz játékmódot:",
     "menu": "1. Én gondoltam egy számra \n2. Te gondoltál egy számra \n3. Kilép \n",
     "1_big_num": "Mi leggyen a legnagyobb gondolt szám? \n",
+    "1_tries": "Hány kőrből tudod kitalálni? \n",
+    "1_guesses": "(Tippek:",
     "1_guess": "Tippelj a kettő között, 1 és ",
     "low": "Alacsony szám",
     "high": "Magas szám",
     "won": "Kitaláltad! Gratulálok!",
+    "1_failed_guess": "Nem találtad ki. Bocsi. A szám: ",
     "enter_valid": "Kérlek adj egy helyes számot.",
     "want_again": "Szeretnél megint játszani?",
-    "thanks_playing": "\n ***Köszönöm hogy játszottál!*** \n"
+    "error": "Valami hiba történt. Indíts újra és adjál helyes számokat!",
+    "thanks_playing": "\n ***Köszönöm hogy játszottál!*** \n",
+    "won1": "Te nyertél: ",
+    "won2": "\nÉn, a számítógép nyertem: "
 }

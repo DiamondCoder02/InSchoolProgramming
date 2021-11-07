@@ -4,11 +4,17 @@
     "choose_gamemode": "Choose a gamemode:",
     "menu": "1. I think of a number \n2. You think of a number \n3. Exit \n",
     "1_big_num": "What is the biggest number you want to guess? \n",
+    "1_tries": "How many tries you need to quess? \n",
+    "1_guesses": "(Guesses:",
     "1_guess": "Guess a number between 1 and ",
     "low": "Low guess",
     "high": "Guess is high",
     "won": "You guessed it! Congratulations!",
+    "1_failed_guess": "You could not guess it. I'm sorry. The number was: ",
     "enter_valid": "Please enter a valid number.",
     "want_again": "Want to play again?",
-    "thanks_playing": "\n ***Thank you for playing!*** \n"
+    "error": "Something went wrong. Restart the game and give correct numbers!",
+    "thanks_playing": "\n ***Thank you for playing!*** \n",
+    "won1": "You won: ",
+    "won2": "\nI, the computer won: "
 }
