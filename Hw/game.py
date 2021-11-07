@@ -29,11 +29,11 @@ while again == 1:
             num = random.randint(1, maxnumber)
             guess = None
             while guess != num:
-                trynum=input('_______________________\nHow many tries you need to quess? \n')
+                trynum=input(lang["1_tries"])
                 trynum1 = int(trynum)
                 for x in range(trynum1):
                     x1=str(x)
-                    guess = input('____________(Guesses:'+x1+') '+ lang["1_guess"] + mn + ": ")
+                    guess = input(lang["1_guesses"] + x1 + ') ' + lang["1_guess"] + mn + ": ")
                     guess = int(guess)
                     if guess < num:
                         print(lang["low"])
@@ -46,7 +46,7 @@ while again == 1:
                         break
                 else:
                     num1 = str(num)
-                    print('_____________________\nYou could not guess it. I\'m sorry. The number was: ' + num1)
+                    print(lang["1_failed_guess"] + num1)
                     break
         elif game == 2:
             print("\033c")
@@ -63,9 +63,9 @@ while again == 1:
         print(lang["enter_valid"])
 
 #except:
- #   print('_____________________\nSomething went wrong. Restart the game and give correct numbers!')
+ #   print(lang["error"])
 
 print(lang["thanks_playing"])
 win1 = str(wins1)
 win2 = str(wins2)
-print('________________You won: ' + win1 + '\n________________I, the computer won: ' + win2)
+print(lang["won1"] + win1 + lang["won2"] + win2)
