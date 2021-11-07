@@ -3,7 +3,7 @@
     "wanna_play": "Wanna play a game?",
     "choose_gamemode": "Choose a gamemode:",
     "menu": "1. I think of a number \n2. You think of a number \n3. Exit \n",
-    "1_big_num": "What is the biggest number you want to guess? \n",
+    "1_big_num": "What is the biggest number you want to guess? (Please give whole positive number!) \n",
     "1_tries": "How many tries you need to quess? \n",
     "1_guesses": "(Guesses:",
     "1_guess": "Guess a number between 1 and ",

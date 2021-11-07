@@ -3,7 +3,7 @@
     "wanna_play": "Szeretnél játszani?",
     "choose_gamemode": "Válasz játékmódot:",
     "menu": "1. Én gondoltam egy számra \n2. Te gondoltál egy számra \n3. Kilép \n",
-    "1_big_num": "Mi leggyen a legnagyobb gondolt szám? \n",
+    "1_big_num": "Mi leggyen a legnagyobb gondolt szám? (Kérlek adj egész pozitív számot!) \n",
     "1_tries": "Hány kőrből tudod kitalálni? \n",
     "1_guesses": "(Tippek:",
     "1_guess": "Tippelj a kettő között, 1 és ",
