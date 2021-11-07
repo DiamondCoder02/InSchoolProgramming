@@ -2,17 +2,16 @@ import json
 print("\033c")
 #_______________________=to translate.
 
+language=input("Language / Nyelv: Eng/Hun: \n")
+#json config load
+langfile = '.\\languages\\'+ language + '.json'
+with open(langfile, 'r') as json_config:
+    lang = json.load(json_config)
+json_config.close
+print(lang)
+print(langfile)
+print(language)
 try:
-    language=input("Language / Nyelv: Eng/Hun: \n")
-    #json config load
-    langfile = '.\\languages\\'+ language + '.json'
-    with open(langfile, 'r') as json_config:
-        lang = json.load(json_config)
-    json_config.close
-    print(lang)
-    print(langfile)
-    print(language)
-
     wins1=0
     wins2=0
     again=input(lang["wanna_play"] + lang["YN"])
