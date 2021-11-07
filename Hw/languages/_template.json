@@ -1,0 +1,20 @@
+{
+    "YN": "\n1.--- \n2.--- \n",
+    "wanna_play": "---?",
+    "choose_gamemode": "---:",
+    "menu": "1. --- \n2. --- \n3. --- \n",
+    "1_big_num": "---? \n",
+    "1_tries": "---? \n",
+    "1_guesses": "(---:",
+    "1_guess": "--- ",
+    "low": "---",
+    "high": "---",
+    "won": "---!",
+    "1_failed_guess": "---. ---: ",
+    "enter_valid": "---.",
+    "want_again": "---?",
+    "error": "---. ---!",
+    "thanks_playing": "\n ***---!*** \n",
+    "won1": "---: ",
+    "won2": "\n---: "
+}
