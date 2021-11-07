@@ -16,5 +16,7 @@
     "error": "Valami hiba történt. Indíts újra és adjál helyes számokat!",
     "thanks_playing": "\n ***Köszönöm hogy játszottál!*** \n",
     "won1": "Te nyertél: ",
-    "won2": "\nÉn, a számítógép nyertem: "
+    "lose1": "te vesztettél: ",
+    "won2": "Én, a számítógép nyertem: ",
+    "lose2": "Én a számítógép vesztettem: "
 }

@@ -16,5 +16,7 @@
     "error": "Something went wrong. Restart the game and give correct numbers!",
     "thanks_playing": "\n ***Thank you for playing!*** \n",
     "won1": "You won: ",
-    "won2": "\nI, the computer won: "
+    "lose1": "You lost: ",
+    "won2": "I, the computer won: ",
+    "lose2": "I, the computer lost: "
 }
