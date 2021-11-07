@@ -17,6 +17,8 @@ to_play = 1
 while to_play == 1:
     wins1=0
     wins2=0
+    lose1=0
+    lose2=0
     again=input(lang["wanna_play"] + lang["YN"])
     again=int(again)
     if again == 1:
@@ -54,11 +56,13 @@ while to_play == 1:
                         else:
                             num1 = str(num)
                             print(lang["1_failed_guess"] + num1)
+                            lose1 += 1
                             break
                 elif game == 2:
                     print("\033c")
                     print("Whut:")
                     wins2 += 1
+                    lose2 += 2
                 elif game == 3:
                     to_play = 0
                     break
@@ -78,4 +82,7 @@ while to_play == 1:
 print(lang["thanks_playing"])
 win1 = str(wins1)
 win2 = str(wins2)
-print(lang["won1"] + win1 + lang["won2"] + win2)
+los1 = str(lose1)
+los2 = str(lose2)
+print(lang["won1"] + win1 + "\n" + lang["lose1"] + los1)
+print(lang["won2"] + win2 + "\n" + lang["lose2"] + los2)
