@@ -29,8 +29,14 @@ while to_play == 1:
     if again == 1:
         print("\033c")
         while again == 1:
-            print(lang["choose_gamemode"])
-            gamemode=input(lang["menu"])
+            while True:
+                try:
+                    print(lang["choose_gamemode"])
+                    gamemode=int(input(lang["menu"]))
+                    break
+                except:
+                    print("\033c")
+                    print(lang["enter_valid"])
             game = int(gamemode)
             if game > 0 and game < 4:
                 if game == 1:
@@ -38,7 +44,6 @@ while to_play == 1:
                     while maxnumber < 1:
                         mn=input(lang["1_big_num"])
                         maxnumber= int(mn)
-                        
                     num = random.randint(1, maxnumber)
                     guess = None
                     print("\033c")
