@@ -1,3 +1,3 @@
 # InSchoolProgramming
-HW - Currently working homework.
-\n InSchool - Stolen from school. No issues writen for them!
+- HW - Currently working homework.
+- InSchool - Stolen from school. No issues writen for them!
