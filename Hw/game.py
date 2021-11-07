@@ -5,7 +5,7 @@ print("\033c")
 language=input("Language / Nyelv: Eng/Hun: \n")
 #json config load
 langfile = '.\\languages\\'+ language + '.json'
-with open(langfile, 'r') as json_config:
+with open(langfile, 'rb') as json_config:
     lang = json.load(json_config)
 json_config.close
 print(lang)
