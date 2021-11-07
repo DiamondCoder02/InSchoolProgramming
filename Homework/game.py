@@ -20,7 +20,7 @@ try:
         print(lang["choose_gamemode"])
         gamemode=input(lang["menu"])
         game = int(gamemode)
-        if game > 0:
+        if game > 0 and game < 4:
             if game == 1:
                 import random
                 mn=input(lang["1_big_num"])
