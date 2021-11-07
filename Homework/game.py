@@ -1,4 +1,5 @@
 import json
+import random
 print("\033c")
 #_______________________=to translate.
 
@@ -16,7 +17,6 @@ to_play = 1
 while to_play == 1:
     wins1=0
     wins2=0
-    print("\033c")
     again=input(lang["wanna_play"] + lang["YN"])
     again=int(again)
     if again == 1:
@@ -27,9 +27,11 @@ while to_play == 1:
             game = int(gamemode)
             if game > 0 and game < 4:
                 if game == 1:
-                    import random
-                    mn=input(lang["1_big_num"])
-                    maxnumber= int(mn)
+                    maxnumber = 0
+                    while maxnumber < 1:
+                        mn=input(lang["1_big_num"])
+                        maxnumber= int(mn)
+                        
                     num = random.randint(1, maxnumber)
                     guess = None
                     print("\033c")
@@ -64,6 +66,7 @@ while to_play == 1:
                     print(lang["enter_valid"])
                 again=input(lang["want_again"] + lang["YN"])
                 again=int(again)
+                to_play = 0
             else:
                 print("\033c")
                 print(lang["enter_valid"])
