@@ -42,17 +42,36 @@ while to_play == 1:
                 if game == 1:
                     maxnumber = 0
                     while maxnumber < 1:
-                        mn=input(lang["1_big_num"])
+                        while True:
+                            try:
+                                mn=int(input(lang["1_big_num"]))
+                                break
+                            except:
+                                print("\033c")
+                                print(lang["enter_valid"])
                         maxnumber= int(mn)
                     num = random.randint(1, maxnumber)
                     guess = None
                     print("\033c")
                     while guess != num:
-                        trynum=input(lang["1_tries"])
+                        while True:
+                            try:
+                                trynum=int(input(lang["1_tries"]))
+                                break
+                            except:
+                                print("\033c")
+                                print(lang["enter_valid"])
                         trynum1 = int(trynum)
                         for x in range(trynum1):
                             x1=str(x)
-                            guess = input(lang["1_guesses"] + x1 + ') ' + lang["1_guess"] + mn + ": ")
+                            mn=str(mn)
+                            while True:
+                                try:
+                                    guess=int(input(lang["1_guesses"] + x1 + ') ' + lang["1_guess"] + mn + ": "))
+                                    break
+                                except:
+                                    print("\033c")
+                                    print(lang["enter_valid"])
                             guess = int(guess)
                             if guess < num:
                                 print(lang["low"])
@@ -78,7 +97,13 @@ while to_play == 1:
                     break
                 else:
                     print(lang["enter_valid"])
-                again=input(lang["want_again"] + lang["YN"])
+                while True:
+                    try:
+                        again=int(input(lang["want_again"] + lang["YN"]))
+                        break
+                    except:
+                        print("\033c")
+                        print(lang["enter_valid"])
                 again=int(again)
                 to_play = 0
             else:
