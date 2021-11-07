@@ -89,7 +89,7 @@ while to_play == 1:
                             break
                 elif game == 2:
                     print("\033c")
-                    print("Whut:")
+                    print("Whut:(Not implemented yet)")
                     wins2 += 1
                     lose2 += 2
                 elif game == 3:
