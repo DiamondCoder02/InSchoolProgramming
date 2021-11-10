@@ -126,21 +126,24 @@ while to_play == 1:
                                     num1=str(num)
                                     minnumber1=str(minnumber)
                                     maxnumber1=str(maxnumber)
-                                    print(minnumber1 +"NO"+ maxnumber1)
+                                    #print(minnumber1 +"NO"+ maxnumber1)
                                     print(lang["guesses"] + x1 + ') ' + lang["2_ask"] + num1)
                                     guess=int(input("1. "+lang["low"]+"\n2. "+lang["high"]+"\n3. "+lang["correct"]+"\n"))
                                     break
                                 except:
-                                    print("\033c")
-                                    print(lang["enter_valid"])
+                                    if maxnumber == minnumber:
+                                        break
+                                    else:
+                                        print("\033c")
+                                        print(lang["enter_valid"])
                             if guess == 1:
-                                minnumber = num
-                                print("lowering")
+                                minnumber = num+1
+                                #print("lowering")
                             elif guess == 2:
-                                maxnumber = num
-                                print("High")
+                                maxnumber = num-1
+                                #print("Higher")
                             elif guess == 3:
-                                print("Win")
+                                print(lang["2_comp_won"])
                                 wins2 += 1
                                 win = True
                                 break
