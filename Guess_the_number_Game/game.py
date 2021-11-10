@@ -30,6 +30,7 @@ while to_play == 1:
             again = int(input(lang["wanna_play"] + lang["YN"]))
             break
         except:
+            print("\033c")
             print(lang["enter_valid"])
     again=int(again)
     if again == 1:
@@ -102,6 +103,7 @@ while to_play == 1:
                     to_play = 0
                     break
                 else:
+                    print("\033c")
                     print(lang["enter_valid"])
                 while True:
                     try:
@@ -118,6 +120,7 @@ while to_play == 1:
     elif again == 2:
         to_play = 0
     else:
+        print("\033c")
         print(lang["enter_valid"])
 
 print(lang["thanks_playing"])
