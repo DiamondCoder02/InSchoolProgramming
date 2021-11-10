@@ -131,11 +131,9 @@ while to_play == 1:
                                     guess=int(input("1. "+lang["low"]+"\n2. "+lang["high"]+"\n3. "+lang["correct"]+"\n"))
                                     break
                                 except:
-                                    if maxnumber == minnumber:
-                                        break
-                                    else:
-                                        print("\033c")
-                                        print(lang["enter_valid"])
+                                    print("\033c")
+                                    print(lang["enter_valid"])
+                                    break
                             if guess == 1:
                                 minnumber = num+1
                                 #print("lowering")
@@ -152,7 +150,7 @@ while to_play == 1:
                                 print(lang["enter_valid"])
                         else:
                             num1 = str(num)
-                            print(lang["2_comp_fail"] + num1)
+                            print(lang["2_comp_fail"])
                             lose2 += 1
                             break
                 elif game == 3:
