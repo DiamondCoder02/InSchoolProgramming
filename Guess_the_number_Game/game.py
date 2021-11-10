@@ -3,15 +3,21 @@ import random
 print("\033c")
 #_______________________=to translate.
 
-language=input("Language / Nyelv: Eng/Hun: \n")
-#json config load
-langfile = '.\\languages\\'+ language + '.json'
-with open(langfile, 'rb') as json_config:
-    lang = json.load(json_config)
-json_config.close
-print(lang)
-print(langfile)
-print(language)
+while True:
+    try:
+        language = str(input("Language / Nyelv: Eng/Hun: \n"))
+        #json config load
+        langfile = '.\\languages\\'+ language + '.json'
+        with open(langfile, 'rb') as json_config:
+            lang = json.load(json_config)
+        json_config.close
+        print(lang)
+        print(langfile)
+        print(language)
+        break
+    except:
+        print("\033c")
+        print("enter_valid")
 
 to_play = 1
 while to_play == 1:
