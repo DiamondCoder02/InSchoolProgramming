@@ -2,7 +2,7 @@ print("\033c")
 import json
 import random
 import os
-to_play = 1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; win = False
+to_play=1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; maxnumber=0 ; win=False
 
 while True:
     try:
@@ -56,9 +56,9 @@ while to_play == 1:
                             except:
                                 print(lang["enter_valid"])
                         trynum1 = int(trynum)
-                        print("\033c")
                         for x in range(trynum1):
-                            x1=str(x) ; mn=str(mn)
+                            x1=str(x)
+                            mn=str(mn)
                             while True:
                                 try:
                                     guess=int(input(lang["guesses"] + x1 + ') ' + lang["1_guess"] + mn + ": "))
@@ -81,38 +81,45 @@ while to_play == 1:
                             lose1 += 1
                             break
                 elif game == 2:
+                    win = None
                     while True:
                         try:
                             mn=int(input(lang["2_big_num"]))
                             break
                         except:
                             print(lang["enter_valid"])
-                    maxnumber = int(mn) ; minnumber = 1
+                    maxnumber = int(mn)
+                    minnumber = 1
                     while True:
                         try:
                             trynum=int(input(lang["2_tries"]))
                             break
                         except:
                             print(lang["enter_valid"])
-                    trynum1 = int(trynum) ; guess = None
-                    print("\033c")
+                    trynum1 = int(trynum)
                     while win != True:
                         for x in range(trynum1):
                             while True:
                                 try:
                                     num = random.randint(minnumber, maxnumber)
-                                    x1=str(x) ; num1=str(num) ; minnumber1=str(minnumber) ; maxnumber1=str(maxnumber)
-                                    print(minnumber1 +"debug"+ maxnumber1)
+                                    x1=str(x)
+                                    num1=str(num)
+                                    minnumber1=str(minnumber)
+                                    maxnumber1=str(maxnumber)
+                                    #print(minnumber1 +"NO"+ maxnumber1)
                                     print(lang["guesses"] + x1 + ') ' + lang["2_ask"] + num1)
                                     guess=int(input("1. "+lang["low"]+"\n2. "+lang["high"]+"\n3. "+lang["correct"]+"\n"))
+                                    print("\033c")
                                     break
                                 except:
                                     print(lang["enter_valid"])
                                     break
                             if guess == 1:
                                 minnumber = num+1
+                                #print("lowering")
                             elif guess == 2:
                                 maxnumber = num-1
+                                #print("Higher")
                             elif guess == 3:
                                 print(lang["2_comp_won"])
                                 wins2 += 1
