@@ -16,7 +16,7 @@ while True:
         json_config.close
         break
     except:
-        print("enter_valid")
+        print("\033c" + "eng, hun, owo")
 while to_play == 1:
     while True:
         try:
