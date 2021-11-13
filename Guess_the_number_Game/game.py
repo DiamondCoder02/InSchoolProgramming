@@ -2,7 +2,7 @@ print("\033c")
 import json
 import random
 import os
-to_play=1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; maxnumber=0 ; win=False
+to_play=1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; win=False
 
 while True:
     try:
@@ -38,6 +38,7 @@ while to_play == 1:
             print("\033c")
             if game > 0 and game < 4:
                 if game == 1:
+                    maxnumber=0
                     while maxnumber < 1:
                         while True:
                             try:
@@ -81,8 +82,8 @@ while to_play == 1:
                             lose1 += 1
                             break
                 elif game == 2:
-                    win = None
-                    while True:
+                    win = None ; mn=0
+                    while mn < 1:
                         try:
                             mn=int(input(lang["2_big_num"]))
                             break
@@ -97,6 +98,7 @@ while to_play == 1:
                         except:
                             print(lang["enter_valid"])
                     trynum1 = int(trynum)
+                    guess = None
                     while win != True:
                         for x in range(trynum1):
                             while True:
