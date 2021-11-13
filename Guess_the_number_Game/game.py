@@ -8,8 +8,7 @@ while True:
     try:
         l=os.listdir('.\\languages')
         li=[x.split('.')[0] for x in l]
-        langlist=str(li)
-        language = str(input("Language / Nyelv: " + langlist + "\n"))
+        language = str(input("Language / Nyelv: " + str(li) + "\n"))
         langfile = '.\\languages\\'+ language + '.json'
         with open(langfile, 'rb') as json_config:
             lang = json.load(json_config)
@@ -24,64 +23,56 @@ while to_play == 1:
             break
         except:
             print(lang["enter_valid"])
-    again=int(again)
-    if again == 1:
-        while again == 1:
+    if int(again) == 1:
+        while int(again) == 1:
             while True:
                 try:
                     print(lang["choose_gamemode"])
-                    gamemode=int(input(lang["menu"]))
+                    game=int(input(lang["menu"]))
                     break
                 except:
                     print(lang["enter_valid"])
-            game = int(gamemode)
             print("\033c")
-            if game > 0 and game < 4:
-                if game == 1:
-                    maxnumber=0
-                    while maxnumber < 1:
+            if int(game) > 0 and int(game) < 4:
+                if int(game) == 1:
+                    mn=0
+                    while int(mn) < 1:
                         while True:
                             try:
                                 mn=int(input(lang["1_big_num"]))
                                 break
                             except:
                                 print(lang["enter_valid"])
-                        maxnumber= int(mn)
-                    num = random.randint(1, maxnumber)
-                    guess = None
-                    while guess != num:
+                    num = random.randint(1, int(mn))
+                    guess = 0
+                    while int(guess) != num:
                         while True:
                             try:
                                 trynum=int(input(lang["1_tries"]))
                                 break
                             except:
                                 print(lang["enter_valid"])
-                        trynum1 = int(trynum)
-                        for x in range(trynum1):
-                            x1=str(x)
-                            mn=str(mn)
+                        for x in range(int(trynum)):
                             while True:
                                 try:
-                                    guess=int(input(lang["guesses"] + x1 + ') ' + lang["1_guess"] + mn + ": "))
+                                    guess=int(input(lang["guesses"] + str(x) + ') ' + lang["1_guess"] + str(mn) + ": "))
                                     print("\033c")
                                     break
                                 except:
                                     print(lang["enter_valid"])
-                            guess = int(guess)
-                            if guess < num:
+                            if int(guess) < num:
                                 print(lang["low"])
-                            elif guess > num:
+                            elif int(guess) > num:
                                 print(lang["high"])
                             else:
                                 print(lang["1_won"])
                                 wins1 += 1
                                 break
                         else:
-                            num1 = str(num)
-                            print(lang["1_failed_guess"] + num1)
+                            print(lang["1_failed_guess"] + str(num))
                             lose1 += 1
                             break
-                elif game == 2:
+                elif int(game) == 2:
                     win = None ; mn=0
                     while mn < 1:
                         try:
@@ -98,31 +89,26 @@ while to_play == 1:
                         except:
                             print(lang["enter_valid"])
                     trynum1 = int(trynum)
-                    guess = None
+                    guess = 0
                     while win != True:
                         for x in range(trynum1):
                             while True:
                                 try:
                                     num = random.randint(minnumber, maxnumber)
-                                    x1=str(x)
-                                    num1=str(num)
-                                    minnumber1=str(minnumber)
-                                    maxnumber1=str(maxnumber)
-                                    #print(minnumber1 +"NO"+ maxnumber1)
-                                    print(lang["guesses"] + x1 + ') ' + lang["2_ask"] + num1)
+                                    #print(str(minnumber) +"NO"+ str(maxnumber))
+                                    print(lang["guesses"] + str(x) + ') ' + lang["2_ask"] + str(num))
                                     guess=int(input("1. "+lang["low"]+"\n2. "+lang["high"]+"\n3. "+lang["correct"]+"\n"))
                                     print("\033c")
                                     break
                                 except:
                                     print(lang["enter_valid"])
-                                    break
-                            if guess == 1:
+                            if int(guess) == 1:
                                 minnumber = num+1
                                 #print("lowering")
-                            elif guess == 2:
+                            elif int(guess) == 2:
                                 maxnumber = num-1
                                 #print("Higher")
-                            elif guess == 3:
+                            elif int(guess) == 3:
                                 print(lang["2_comp_won"])
                                 wins2 += 1
                                 win = True
@@ -130,11 +116,10 @@ while to_play == 1:
                             else:
                                 print(lang["enter_valid"])
                         else:
-                            num1 = str(num)
                             print(lang["2_comp_fail"])
                             lose2 += 1
                             break
-                elif game == 3:
+                elif int(game) == 3:
                     to_play = 0
                     break
                 else:
@@ -145,11 +130,10 @@ while to_play == 1:
                         break
                     except:
                         print(lang["enter_valid"])
-                again=int(again)
                 to_play = 0
             else:
                 print(lang["enter_valid"])
-    elif again == 2:
+    elif int(again) == 2:
         to_play = 0
     else:
         print(lang["enter_valid"])
