@@ -10,6 +10,7 @@
     "2_big_num": "What is the biggest number I can guess? (Please give whole positive number!) \n",
     "2_tries": "How many tries I have to guess? (Please give whole positive number!) \n",
     "2_ask": "Is your number?: ",
+    "2_minmax": "The minimum number can not be bigger than max. Ending game.",
     "low": "The guess is low.",
     "high": "Guess is high",
     "correct": "That is the correct number",

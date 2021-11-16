@@ -10,6 +10,7 @@
     "2_big_num": "Mi a legnagyobb gondolt számod? (Kérlek adj egész pozitív számot!) \n",
     "2_tries": "Mennyiből kell kitalálnom? (Kérlek adj egész pozitív számot!) \n",
     "2_ask": "A gondolt számod?: ",
+    "2_minmax": "A minimum szám nem lehet nagyobb a max számnál. Játék vége.",
     "low": "Alacsony a tippelt szám",
     "high": "Magas a szám",
     "correct": "Az a helyes szám",
