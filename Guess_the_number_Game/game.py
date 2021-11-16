@@ -2,7 +2,7 @@ print("\033c")
 import json
 import random
 import os
-to_play=1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; win=False
+to_play=1 ; wins1=0 ; wins2=0 ; lose1=0 ; lose2=0 ; what=0 ; win=False
 
 while True:
     try:
@@ -10,12 +10,12 @@ while True:
         li=[x.split('.')[0] for x in l]
         language = str(input("Language / Nyelv: " + str(li) + "\n"))
         langfile = '.\\languages\\'+ language + '.json'
-        with open(langfile, 'rb') as json_config:
+        with open(langfile, 'r', encoding='utf-8') as json_config:
             lang = json.load(json_config)
         json_config.close
         break
     except:
-        print("\033c" + "eng, hun, owo")
+        print("\033c" + "Write one of theses: eng, hun, owo \nAlso don't forget tha language files. \n")
 while to_play == 1:
     while True:
         try:
@@ -92,6 +92,11 @@ while to_play == 1:
                     guess = 0
                     while win != True:
                         for x in range(trynum1):
+                            if minnumber > maxnumber:
+                                print("The minimum cannot be bigger than max. Ending game.")
+                                what += 1
+                                win = True
+                                break
                             while True:
                                 try:
                                     num = random.randint(minnumber, maxnumber)
@@ -141,3 +146,4 @@ while to_play == 1:
 print(lang["thanks_playing"])
 win1 = str(wins1) ; win2 = str(wins2) ; los1 = str(lose1) ; los2 = str(lose2)
 print(lang["won1"] + win1 + "\n" + lang["lose1"] + los1 + "\n" + lang["won2"] + win2 + "\n" + lang["lose2"] + los2)
+print("Whut? :" + str(what))
