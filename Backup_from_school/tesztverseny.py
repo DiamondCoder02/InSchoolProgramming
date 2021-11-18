@@ -18,6 +18,9 @@ helyes=""
 for i,jel in enumerate(megoldasok):
     helyes+="+" if jel==be_valasz[i] else " "
 print(helyes + " \t(A versenyző helyes válaszai)")
-print("\n5.feladat")
-
-print("\n6.feladat")
+fsorszam=int(input("\n5.feladat: A feladata sorszáma = "))-1
+jovalasz=0 ; jojel=megoldasok[fsorszam]
+for szkod,szvalasz in eredmenyek:
+    if szvalasz[fsorszam]==jojel:
+        jovalasz+=1
+print("A feladatra {} fő, a versenyzők {}%-a adott helyes választ".format(jovalasz, round(jovalasz*100/len(eredmenyek),2)))
