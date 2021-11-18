@@ -1,6 +1,5 @@
 {
     "YN": "\n1.Yes \n2.No \n",
-    "wanna_play": "Wanna play a game?",
     "choose_gamemode": "Choose a gamemode:",
     "menu": "1. I think of a number \n2. You think of a number \n3. Exit \n",
     "1_big_num": "What is the biggest number you want to guess? (Please give whole positive number!) \n",
@@ -25,5 +24,6 @@
     "won1": "You won: ",
     "lose1": "You lost: ",
     "won2": "I, the computer won: ",
-    "lose2": "I, the computer lost: "
+    "lose2": "I, the computer lost: ",
+    "mistake": "Draw / Mistakes: "
 }

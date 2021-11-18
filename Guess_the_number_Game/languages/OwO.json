@@ -1,6 +1,5 @@
 {
     "YN": "\n1.Yes ^_^ \n2.No ＞︿＜\n",
-    "wanna_play": "Wanna pway a gwame? UwU",
     "choose_gamemode": "Chwoose gamemwode:",
     "menu": "1. I think of nyumbew OwO \n2. You think of nyumbew UwU \n3. Exit (っ °Д °;)っ \n",
     "1_big_num": "What is biggest nyumbew you want to gwuess? (Pwease give whowe positive nyumbew!) \n",
@@ -25,5 +24,6 @@
     "won1": "You owo, won: ",
     "lose1": "You uwu, wost: ",
     "won2": "I, thwe computew won: ",
-    "lose2": "I, thwe computew wost: "
+    "lose2": "I, thwe computew wost: ",
+    "mistake": "Dwaw / Mwistwakes: "
 }

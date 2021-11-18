@@ -1,6 +1,5 @@
 {
     "YN": "\n1.Igen \n2.Nem \n",
-    "wanna_play": "Szeretnél játszani?",
     "choose_gamemode": "Válasz játékmódot:",
     "menu": "1. Én gondoltam egy számra \n2. Te gondoltál egy számra \n3. Kilép \n",
     "1_big_num": "Mi leggyen a legnagyobb gondolt szám? (Kérlek adj egész pozitív számot!) \n",
@@ -25,5 +24,6 @@
     "won1": "Te nyertél: ",
     "lose1": "Te vesztettél: ",
     "won2": "Én, a számítógép nyertem: ",
-    "lose2": "Én a számítógép vesztettem: "
+    "lose2": "Én a számítógép vesztettem: ",
+    "mistake": "Egyenlő / Hibák: "
 }
