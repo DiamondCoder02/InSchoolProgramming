@@ -12,6 +12,6 @@
 3. When done you should be able to just double click game.py to play.
 > Dont forget to download the whole Guess_the_number_Game file or it will not work.
 >
->If douple click does not start it: Where the game.py is, open up a console and type( without "") "python game.py".
+>If douple click does not start it: Where the game.py is, open up a console and type "python game.py" (without "").
 
 If something doesn't work, just make an issue and I will look into it. 
