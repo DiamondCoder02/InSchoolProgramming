@@ -1,7 +1,7 @@
 # InSchoolProgramming
 > These are all from and for my (hungarian) IT class.
 - _homework - Currently working on this homework.
-- Back_from_school - Stolen from school. Just if needed in future. **No issues writen for them!**
+- Back_from_school - Stolen from school. Just if needed in future. **No issues for them!**
 - Guess_the_number_Game - Finished homework. Playable if you know how to start .py files.
 > If anyone in my school copies this at least change the code a bit. **I know you.**
 
@@ -12,6 +12,6 @@
 3. When done you should be able to just double click game.py to play.
 > Dont forget to download the whole Guess_the_number_Game file or it will not work.
 >
->If it does not work: Where the game.py is, open up a console and type( without "") "python game.py".
+>If douple click does not start it: Where the game.py is, open up a console and type( without "") "python game.py".
 
 If something doesn't work, just make an issue and I will look into it. 
