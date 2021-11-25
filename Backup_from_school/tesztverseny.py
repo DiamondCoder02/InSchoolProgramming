@@ -37,6 +37,7 @@ with open("pontok.txt","w") as ff:
     for i, (szkod, szvalasz) in enumerate(eredmenyek):
         pontszam=fpontok(megoldasok, szvalasz)
         ff.write("{} {}\n".format(szkod,pontszam))
+        eredmenyek[i].append(pontszam)
 print("\n7.feladat: A verseny legjobbjai.")
 def hasonlit(adat):
     szkod,szvalasz,pontszam=adat
