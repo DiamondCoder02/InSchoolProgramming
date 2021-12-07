@@ -1,11 +1,5 @@
+from itertools import product
 import keyboard
-print("\033c")
-while False:
-    try:
-        
-        break
-    except:
-        print("\033c" + "fuck \n")
 
 keyboard.press_and_release('shift+s, space')
 
@@ -19,10 +13,27 @@ keyboard.add_hotkey('page up, page down', lambda: keyboard.write('foobar'))
 # Blocks until you press esc.
 keyboard.wait('esc')
 
-# Record events until 'esc' is pressed.
-recorded = keyboard.record(until='esc')
-# Then replay back at three times the speed.
-keyboard.play(recorded, speed_factor=3)
 
-# Type @@ then press space to replace with abbreviation.
-keyboard.add_abbreviation('@@', 'my.long.email@example.com')
+while True:
+    print("\033c")
+    print("""
+    1.Add a Student
+    2.Delete a Student
+    3.Look Up Student Record
+    4.Exit/Quit
+    """)
+    ans=input("What would you like to do? ")
+    if ans=="1":
+      print("\nStudent Added")
+      break
+    elif ans=="2":
+      print("\n Student Deleted")
+      break
+    elif ans=="3":
+      print("\n Student Record Found")
+      break
+    elif ans=="4":
+      print("\n Goodbye") 
+      break
+    else:
+       print("\n Not Valid Choice Try again")
