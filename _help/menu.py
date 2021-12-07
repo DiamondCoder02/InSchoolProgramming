@@ -16,13 +16,16 @@ keyboard.wait('esc')
 
 while True:
     print("\033c")
+    test=0
     print("""
     1.Add a Student
     2.Delete a Student
     3.Look Up Student Record
     4.Exit/Quit
-    """)
+    {}
+    """.format(test))
     ans=input("What would you like to do? ")
+        
     if ans=="1":
       print("\nStudent Added")
       break
