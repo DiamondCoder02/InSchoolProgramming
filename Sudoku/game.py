@@ -13,4 +13,3 @@ print("0 0 0 | 0 0 0 | 0 0 0")
 print("0 0 0 | 0 0 0 | 0 0 0")
 print("0 0 0 | 0 0 0 | 0 0 0")
 keyboard.wait("up")
-#tic tac toe
