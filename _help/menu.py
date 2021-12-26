@@ -1,4 +1,3 @@
-from itertools import product
 import keyboard
 
 keyboard.press_and_release('shift+s, space')
@@ -37,6 +36,25 @@ while True:
       break
     elif ans=="4":
       print("\n Goodbye") 
+      break
+    else:
+       print("\n Not Valid Choice Try again")
+       
+while True:
+    print("\033c")
+    sure=False
+    test=0
+    print("""
+    1.Straight
+    2.Gay
+    {}
+    """.format(test))
+    ans=int(input("What would you like to do? "))
+    if ans=="1":
+      print("\nWhy are you gay?")
+      break
+    elif ans=="2":
+      print("\nWhy are you not gay?")
       break
     else:
        print("\n Not Valid Choice Try again")

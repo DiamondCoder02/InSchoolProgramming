@@ -125,3 +125,7 @@ while int(again) == 1:
 
 print(lang["thanks_playing"])
 print(lang["won1"]+str(wins1)+"\n"+lang["lose1"]+str(lose1)+"\n"+lang["won2"]+str(wins2)+"\n"+lang["lose2"]+str(lose2)+"\n"+lang["mistake"]+str(what))
+
+import keyboard
+print("\nhttps://github.com/DiamondPRO02 \n(esc)")
+keyboard.wait("esc")
