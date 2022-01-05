@@ -2,8 +2,9 @@
 > These are all from and for my (hungarian) IT class.
 - _help - Basic files, cheat sheet and a run.bat for easy python extension installation.
 - Back_from_school - Stolen from school. Just if needed in future. **No issues for them!**
+- ClickClick - New project idea to test mouse and keyboard input for the terminal. Lazy to make seperate repository.
 - Guess_the_number_Game - Finished homework. Playable if you know how to start .py files. **Done with it.** 
-- Tic-tac-toe - Small project for myself. Lazy to make seperate repository. 
+- Tic-tac-toe - Small project for myself. Lazy to make seperate repository.
 > If anyone in my school copies this at least change the code a bit. **I know you.**
 
 Current ideas:
