@@ -16,3 +16,24 @@ while True:
         print("\033c" + "Write one of theses: eng, hun \nAlso don't forget tha language files. \n")
         
 print(lang["welcome"])
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
