@@ -37,3 +37,9 @@ class Person:
 
 p1 = Person("John", 36)
 p1.myfunc()
+
+keyboard.wait('ctrl')
+if keyboard.read_event('alt'):
+    print("enter")
+else:
+    print("fuck")
