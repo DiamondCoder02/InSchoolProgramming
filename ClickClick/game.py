@@ -22,25 +22,15 @@ class Person:
   def __init__(self, name, age):
     self.name = name
     self.age = age
-
+  def myfunc(self):
+    print("Hello my name is " + self.name)
 p1 = Person("John", 36)
-
+p1.myfunc()
 print(p1.name)
 print(p1.age)
 
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-  def myfunc(self):
-    print("Hello my name is " + self.name)
-
-p1 = Person("John", 36)
-p1.myfunc()
-
 print("-----------------------------------------------------------")
-#I think I know classes! Don't judge naming. It i just to better understand it.
+#I think I know classes! Don't judge naming. It is just to better understand it.
 class test:
   def __init__(gay, hi, fuck):
     gay.hello = hi
