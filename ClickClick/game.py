@@ -38,3 +38,18 @@ class Person:
 
 p1 = Person("John", 36)
 p1.myfunc()
+
+print("-----------------------------------------------------------")
+#I think I know classes! Don't judge naming. It i just to better understand it.
+class test:
+  def __init__(gay, hi, fuck):
+    gay.hello = hi
+    gay.sex = fuck
+    
+  def lol(gay):
+    print("Hi, I'm " + str(gay.sex) + " and I want to intercourse " + gay.hello)
+
+text = test("You", 18)
+print(text.hello)
+print(text.sex)
+text.lol()
